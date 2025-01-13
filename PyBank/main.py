@@ -24,7 +24,7 @@ with open(file_to_load) as financial_data:
     reader = csv.reader(financial_data)
 
     # Skip the header row
-    csv_header = next(reader)
+    header = next(reader)
 
     # Extract first row to avoid appending to net_change_list
     first_row = next(reader)
